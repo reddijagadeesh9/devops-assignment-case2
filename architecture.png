@@ -1,0 +1,26 @@
+                    🌐 End User
+                         |
+                         v
+        ┌──────────────────────────────────┐
+        │      Amazon CloudFront (CDN)     │
+        │----------------------------------│
+        │ • HTTPS Enabled                  │
+        │ • Global Edge Locations          │
+        │ • Caching (Optimized)            │
+        │ • Origin Access Control (OAC)    │
+        └──────────────────────────────────┘
+                         |
+                         v
+        ┌──────────────────────────────────┐
+        │        Amazon S3 Bucket          │
+        │----------------------------------│
+        │ • Private (No Public Access)     │
+        │ • Block Public Access Enabled    │
+        │ • Server-Side Encryption         │
+        │ • Versioning Enabled             │
+        └──────────────────────────────────┘
+
+
+ ❌ Direct Access Attempt:
+ User ───────────────→ S3 Bucket
+                ❌ AccessDenied (Blocked)
